@@ -24,11 +24,11 @@ penguin_file = st.file_uploader('Upload your own penguin data')
 
 if penguin_file is None: 
     
-    with open(r'C:\Users\RED5G\Documents\streamlit_apps\penguin_app\random_forest_penguin.pickle', 'rb') as rf_pickle:
+    with open(r'random_forest_penguin.pickle', 'rb') as rf_pickle:
     
         rfc = pickle.load(rf_pickle)
     
-    with open(r'C:\Users\RED5G\Documents\streamlit_apps\penguin_app\output_penguin.pickle', 'rb') as map_pickle:
+    with open(r'output_penguin.pickle', 'rb') as map_pickle:
     
         unique_penguin_mapping = pickle.load(map_pickle)
     
